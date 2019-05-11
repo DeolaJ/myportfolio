@@ -3,6 +3,7 @@ import './App.scss'
 import Nav from '../src/components/Nav/Nav'
 import Body from '../src/components/Body/Body'
 import Footer from '../src/components/Footer/Footer'
+import 'semantic-ui-css/semantic.min.css'
 
 class App extends Component {
 

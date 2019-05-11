@@ -14,12 +14,12 @@ class Body extends Component {
       <main className={'mainbody'}>
         <Grid stackable>
           <Grid.Column width={16}>
-            <Router>
+            <Router basename={'/'}>
               <Switch>
-                <Route path={'/home'} component={Home} />
+                {/* <Route path={'/home'} component={Home} />
                 <Route path={'/about'} component={About} />
                 <Route path={'/portfolio'} component={Portfolio} />
-                <Route path={'/contact'} component={Contact} />
+                <Route path={'/contact'} component={Contact} /> */}
               </Switch>
             </Router>
           </Grid.Column>
