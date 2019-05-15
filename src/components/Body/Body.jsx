@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import './Body.scss'
 import { Grid } from 'semantic-ui-react'
 import Home from '../Home/Home'
@@ -14,14 +14,12 @@ class Body extends Component {
       <main className={'mainbody'}>
         <Grid stackable>
           <Grid.Column width={16}>
-            <Router basename={'/'}>
-              <Switch>
-                {/* <Route path={'/home'} component={Home} />
-                <Route path={'/about'} component={About} />
-                <Route path={'/portfolio'} component={Portfolio} />
-                <Route path={'/contact'} component={Contact} /> */}
-              </Switch>
-            </Router>
+            <Switch>
+              <Route exact path={'/'} component={Home} />
+              <Route path={'/about'} component={About} />
+              <Route path={'/portfolio'} component={Portfolio} />
+              <Route path={'/contact'} component={Contact} />
+            </Switch>
           </Grid.Column>
         </Grid>
       </main>

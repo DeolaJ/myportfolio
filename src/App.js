@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.scss'
 import Nav from '../src/components/Nav/Nav'
+import { BrowserRouter as Router } from 'react-router-dom'
 import Body from '../src/components/Body/Body'
 import Footer from '../src/components/Footer/Footer'
 import 'semantic-ui-css/semantic.min.css'
@@ -11,8 +12,12 @@ class App extends Component {
 
     return (
       <div className={'portfolio'}>
-        <Nav/>
-        <Body/>
+
+        <Router basename={'/'}>
+          <Nav/>
+          <Body/>
+        </Router>
+        
         <Footer/>
       </div>
     )

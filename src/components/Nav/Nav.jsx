@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Nav.scss'
 import { Icon, List } from 'semantic-ui-react'
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class Nav extends Component {
 
@@ -11,7 +11,7 @@ class Nav extends Component {
       {
         id: 1,
         name: 'Home',
-        link: '/home',
+        link: '/',
         icon: 'home'
       },
       {
@@ -40,11 +40,9 @@ class Nav extends Component {
           {
             navItems.map((item) => (
               <List.Item key={item.id}>
-                <Router>
-                  <Link to={item.link}>
-                    <Icon name={item.icon} />{item.name}
-                  </Link>
-                </Router>
+                <Link to={item.link}>
+                  <Icon name={item.icon} />{item.name}
+                </Link>
               </List.Item>
             ))
           }
