@@ -15,7 +15,7 @@ class Footer extends Component {
     return (
       <footer className={'footer'}>
         <div>
-          All Rights Reserved, &copy; Copyright <span className={'footer-year'}></span> Adeola Adeyemo 
+          &copy; Copyright <span className={'footer-year'}></span> Adeola Adeyemo 
         </div>
       </footer>
     )
